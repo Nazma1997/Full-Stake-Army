@@ -8,7 +8,7 @@ function uuidv4(){
 
 
 const students = {
-    'b6bd94ac-486c-4d61-06aa-0bfdd0c6ffad' :{
+    'b6bd94ac-486c-4d61-06aa-0bfdd0c6ffad':{
         id: 'b6bd94ac-486c-4d61-06aa-0bfdd0c6ffad',
         name: 'Nahid',
         email: 'nahid@gmail.com'
@@ -39,5 +39,19 @@ const students = {
   }
 
   students[std.id] = std;
+
+
+//   Update an elements 
+   const idToBeUpdated = 'b6bd94ac-486c-4d61-06aa-0bfdd0c6ffad';
+   const updatedData = {
+       name : "Sidra",
+       email: "sidra@gmail.com"
+   };
+
+   students[idToBeUpdated] = {
+       ...[idToBeUpdated],
+       ...updatedData
+   }
+
 
   console.log(students);
