@@ -33,8 +33,34 @@ const students = [
         id: '544f0ee1-5cb8-45bc-0a64-533e2e3807e9',
         name: 'Takia',
         email: 'takia@gmail.com'
+      },
+      {
+        id: 'c164e857-5ee2-4875-0304-0549d904e4a9',
+        name: 'Tanbir',
+        email: 'tanbir@gmail.com'
       }
 ]
+    /**   Create an elements 
+     students.push({
+         id:uuidv4(),
+         name:"Tanbir",
+         email:"tanbir@gmail.com"
+     })
+     */
+     
+    //  Update an elements 
+
+    const idToUpdate = 'b6bd94ac-486c-4d61-06aa-0bfdd0c6ffad';
+    const updatedData = {
+        name:"Sania",
+        email: "sania@gmail.com"
+    };
+
+    const updatedIndex = students.findIndex((item)=> item.id == idToUpdate);
+    students[updatedIndex] = {
+        ...students[updatedIndex],
+        ...updatedData,
+    }
 
 
 console.log(students);
