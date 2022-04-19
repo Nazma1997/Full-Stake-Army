@@ -47,8 +47,9 @@ const students = [
          email:"tanbir@gmail.com"
      })
      */
-     
-    //  Update an elements 
+    
+     /** 
+      Update an elements 
 
     const idToUpdate = 'b6bd94ac-486c-4d61-06aa-0bfdd0c6ffad';
     const updatedData = {
@@ -62,5 +63,7 @@ const students = [
         ...updatedData,
     }
 
+    */
+     
 
 console.log(students);
