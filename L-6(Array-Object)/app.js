@@ -64,6 +64,12 @@ const students = [
     }
 
     */
-     
 
+     /** 
+     Deleted an element 
+
+    const idToUpdate = 'b6bd94ac-486c-4d61-06aa-0bfdd0c6ffad';
+    const updatedIndex = students.findIndex((item)=> item.id == idToUpdate);
+    students.splice(updatedIndex, 1)
+   */
 console.log(students);
