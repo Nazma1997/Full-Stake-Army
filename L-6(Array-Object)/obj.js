@@ -60,7 +60,14 @@ const students = {
   //  get 
 
   const stuId = '544f0ee1-5cb8-45bc-0a64-533e2e3807e9';
-  console.log(students[stuId])
+  // console.log(students[stuId])
+
+
+  // Travers 
+
+  Object.values(students).forEach((student) => {
+     console.log(student)
+  })
    
    
 
