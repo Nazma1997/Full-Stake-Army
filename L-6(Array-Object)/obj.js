@@ -53,5 +53,15 @@ const students = {
        ...updatedData
    }
 
+  //  Delete an elements 
+     const id = 'c164e857-5ee2-4875-0304-0549d904e4a9'
+     delete students[id];
 
-  console.log(students);
+  //  get 
+
+  const stuId = '544f0ee1-5cb8-45bc-0a64-533e2e3807e9';
+  console.log(students[stuId])
+   
+   
+
+  // console.log(students);
