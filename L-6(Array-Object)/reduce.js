@@ -27,7 +27,7 @@ const result2 = numbers.reduce((acc, cur ) => {
     return acc;
 }, [])
 
-console.log(result2);
+console.log( 'result2 :', result2);
 
 
 // Own Reduce method 
@@ -52,4 +52,36 @@ const result3 = myReduce(numbers, (acc, cur) => {
 },[]);
 
 
-console.log('Result3 :', result3)
+console.log('Result3 :', result3);
+
+
+// Decorated object from undecorated array 
+
+const names =[
+    'alamin',
+    'abu raihan',
+    'anish',
+    'badol',
+    'nanno',
+    'kayesh',
+    'sultan'
+];
+
+const namesGroup = names.reduce((acc, cur) => {
+    
+     const firstLetter = cur[0].toUpperCase();
+
+     if(firstLetter in acc){
+         acc[firstLetter].push(cur);
+       
+     } else {
+         acc[firstLetter] = [cur]
+     }
+
+
+    return acc;
+},{});
+
+
+console.log(namesGroup);
+
