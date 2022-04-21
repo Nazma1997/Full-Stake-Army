@@ -63,7 +63,7 @@ const students = {
   // console.log(students[stuId])
 
 
-  // Travers 
+  // Travers  
 
   Object.values(students).forEach((student) => {
      console.log(student)
