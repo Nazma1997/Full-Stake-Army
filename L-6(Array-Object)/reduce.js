@@ -35,7 +35,7 @@ console.log(result2);
 function myReduce(array, callBack, init){
     let acc = init;
     for(let i = 0; i < array.length; i++){
-        acc = callBack(acc, array[i], i, array);
+        acc = callBack(acc, array[i], i, array); //acc = accumulator, array[i] = index, i = initial value, array = main array
     }
 
     return acc;
