@@ -72,13 +72,10 @@ const namesGroup = names.reduce((acc, cur) => {
      const firstLetter = cur[0].toUpperCase();
 
      if(firstLetter in acc){
-         acc[firstLetter].push(cur);
-       
+         acc[firstLetter].push(cur); 
      } else {
          acc[firstLetter] = [cur]
      }
-
-
     return acc;
 },{});
 
@@ -88,7 +85,7 @@ const namesGroup = names.reduce((acc, cur) => {
 Object.keys(namesGroup).forEach((groupKey) => {
     console.log(groupKey);
     namesGroup[groupKey].forEach((name) => {
-        console.log(name , '\n');
+        // console.log(name , '\n');
         
     })
 })
