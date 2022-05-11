@@ -1,3 +1,6 @@
+
+// Array to Function by Reduce 
+
 const array = [ 'Hafsa', 'Takia', 'Nazma' ];
 
 const arrayToFunction = array.reduce((acc, cur) => {
@@ -12,6 +15,11 @@ const arrayToFunction = array.reduce((acc, cur) => {
   
   return acc;
 }, {});
+
+
+console.log(arrayToFunction);
+
+console.log(arrayToFunction.T= 'Sakin')
 
 
 console.log(arrayToFunction);
